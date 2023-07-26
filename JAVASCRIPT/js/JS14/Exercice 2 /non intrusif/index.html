@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nombre magique</title>
+  </head>
+  <body>
+    <div id="label1">Entrez votre proposition</div>
+    <input id="textBox1" value="">
+    <input type="button" id="button1" value="Verifier"> 
+
+    <script>
+        var nombreProp;
+        var label=document.getElementById('label1');
+        var nombreMagique=Math.random() * (101-1)+1;
+        nombreMagique=Math.round(nombreMagique);
+        console.log(nombreMagique);
+        document.querySelector('#button1').onclick = function() {
+            nombreProp=document.getElementById('textBox1');
+
+            if (nombreProp.value>nombreMagique)
+            {
+             label.innerHTML+='<br> Trop grand ! Le nombre saisie était '+nombreProp.value;
+            }else if (nombreProp.value<nombreMagique)
+            {
+             label.innerHTML+='<br> Trop petit ! Le nombre saisie était '+nombreProp.value;
+            }else {
+                label.innerHTML+='<br> BRAVO VOUS AVEZ GAGNÉ'
+                document.getElementById('button1').style.display="none";
+                document.getElementById('textBox1').style.display="none";
+
+            }
+        }
+
+    </script>
+
+  </body>
+</html>
