@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script src="javascript.js" defer></script>
+
+<form id="form1"  method="post">
+    <h2>Vos coordonées :</h2>
+    <div class="red">
+        <p><span class="etoile">* </span><strong>Ces zones sont obligatoires pour envoyer le formulaire.</strong></p>
+    </div>
+
+    
+    <label for="societe"><strong>Société : </strong><span class="etoile">*</span></label>
+    <input type="text" name="societe" id="societe">
+    <span class="error-message" id="societe-error"></span>
+    <br>
+    <label for="contact"><strong>Personne à contacter : </strong><span class="etoile">*</span></label>
+    <input type="text" name="contact" id="contact">
+    <span class="error-message" id="contact-error"></span>
+    <br>
+    <div class="text">
+    <label for="adresse"><strong>Adresse de l'entreprise : </strong></label>
+    <textarea name="adresse" id="adresse"    rows="1"   cols="25"></textarea>
+    </div>
+    <br>
+    <label for="codepostal"><strong>Code Postal : </strong><span class="etoile">*</span></label>
+    <input id="codepostal" type="text" name="code postal">
+    <span class="error-message" id="code-postal-error"></span>
+    <br>
+    <label for="ville"><strong>Ville : </strong><span class="etoile">*</span></label>
+    <input id="ville" type="text" name="ville">
+    <span class="error-message" id="ville-error"></span>
+    <br>
+    <label for="mail"><strong>E-mail : </strong><span class="etoile">*</span></label>
+    <input id="mail" type="text"  name="mail">
+    <span class="error-message" id="mail-error"></span>
+    <br>
+    <label for="num"><strong>Téléphone : </strong></label>
+    <input id="num" type="text"  name="num">
+    <br>
+    <div class="text">
+    <label for="projet"><strong>Sélectionnez l'environnement technique du projet : </strong></label>
+    <textarea name="description" id="description"    rows="1"  cols="25"></textarea>
+    </div>
+    
+    <select id="projet">
+        <div class="select">
+        <option value=""  selected>Choisissez</option>
+        </div>
+        <option value="access">Access</option>
+        <option value="java">Java</option>
+        <option value="delphi">Delphi</option>
+        <option value="windev">Windev</option>
+        <option value="visual">Visual Basic</option>
+        <option value="power">Power Builder</option>
+        <option value="internet">Internet</option>
+        <option value="intranet">Intranet</option>
+        <option value="windwos nt">Windows NT</option>
+        <option value="unix">Unix</option>
+        <option value="sql">SQL Server</option>
+        <option value="oracle">Oracle</option>
+        <option value="Autres">Autres</option>
+    </select>
+    <br>
+    <input type="submit" value="Envoyer" id="button1"> <input type="reset" value="Annuler">
+
+</form>
+</body>
+</html>

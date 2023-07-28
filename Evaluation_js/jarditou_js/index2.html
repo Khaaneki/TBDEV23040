@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script src="javascript.js" defer></script>
+
+<form id="form1"  method="post">
+    <h2>Vos coordonées :</h2>
+    <div class="red">
+        <p><span class="etoile">* </span><strong>Ces zones sont obligatoires pour envoyer le formulaire.</strong></p>
+    </div>
+
+    
+    <label for="nom"><strong>Nom : </strong><span class="etoile">*</span></label>
+    <input type="text" name="nom" id="nom">
+    <span class="error-message" id="nom-error"></span><br>
+    <br>
+    <label for="prenom"><strong>Prénom : </strong><span class="etoile">*</span></label>
+    <input type="text" name="prenom" id="prenom">
+    <span class="error-message" id="prenom-error"></span>
+    <br>
+    <br><strong>Sexe : </strong><span class="etoile">*</span></label>
+    <input id="feminin" type="radio" name="sex"  value="Féminin">
+    <label for="feminin">Féminin</label>
+    <input id="masculin" type="radio" name="sex"  value="Masculin">
+    <label for="masculin">Masculin</label><br>
+    <span class="error-message" id="sex-error"></span>
+    <br>
+    <label for="date"><strong>Date de naissance : </strong><span class="etoile">*</span></label>
+    <input id="date" type="date"  name="ddn">
+    <span class="error-message" id="date-error"></span><br>
+    <br>
+    <label for="codepostal"><strong>Code Postal : </strong><span class="etoile">*</span></label>
+    <input id="codepostal" type="text" name="code postal">
+    <span class="error-message" id="code-postal-error"></span><br>
+    <br>
+    <label for="adresse"><strong>Adresse : </strong></label>
+    <input id="adresse" type="text" name="adresse"><br>
+    <span class="error-message" id="adresse-error"></span><br>
+    <br>
+    <label for="ville"><strong>Ville : </strong></label>
+    <input id="ville" type="text" name="ville">
+    <span class="error-message" id="ville-error"></span><br>
+    <br>
+    <label for="mail"><strong>E-mail : </strong><span class="etoile">*</span></label>
+    <input id="mail" type="text"  name="mail">
+    <span class="error-message" id="mail-error"></span><br>
+    <br>
+
+    <br>
+        <legend><strong>Votre demande</strong></legend><br>
+        <label for="sujet"><strong>sujet : </strong><span class="etoile">*</span></label>
+        <select id="sujet">
+            <option value=""  selected>Veuillez séléctionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="Question sur un produit">Question sur un produit</option>
+            <option value="Réclamation">Réclamation</option>
+            <option value="Autres">Autres</option><br>
+        </select><br>
+        <span class="error-message" id="sujet-error"></span>
+       <br> <label for="votreQuestion"><strong>Votre question :</strong><span class="etoile">*</span></label>
+       <span class="error-message" id="question-error"></span>
+        <br><textarea name="commentaire" id="question-error"    rows="2"   cols="45"></textarea>
+        </div><br>
+        <br><input type="checkbox" name="conditions" value="conditions" checked> * J'accepte le traitement informatique de ce formulaire<br>
+    <br>
+    <input type="submit" value="Envoyer" id="button1"> <input type="reset" value="Annuler">
+
+</form>
+</body>
+</html>
